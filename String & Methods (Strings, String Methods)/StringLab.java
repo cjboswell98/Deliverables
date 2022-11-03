@@ -44,7 +44,7 @@ public class StringLab {
 	}
 	public static void wheresWaldo() {
 		System.out.println("You are playing [Wheres Waldo?]");
-		System.out.println("Enter a word: ");
+		System.out.println("Enter a phrase: ");
 		String waldo = wheresWaldo.nextLine().toLowerCase();
 		System.out.println(waldo.indexOf("waldo"));
 	}
@@ -88,14 +88,16 @@ public class StringLab {
 	}
 	public static void afterMath() {
 		System.out.println("You are playing [After Math]");
-		System.out.println("Enter a word: ");
+		System.out.println("Enter a sentence: ");
 		String math = afterMath.nextLine().toLowerCase();
-		System.out.println(math.indexOf("math"));
 		
-		//for(i = 0; i > math; i++) {
-			
+		if(math.contains("math")) {
+			System.out.println(math.substring(math.indexOf("math")));
 		}
-	
+		else {
+			System.out.println("dud");
+		}
+	}
 	public static void letterize() {
 		System.out.println("You are playing [Letterize]");
 		System.out.println("Enter a word: ");
