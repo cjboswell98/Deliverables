@@ -72,7 +72,7 @@ public class Array {
 		if(input1.contains("9")) {
 			Tom();
 		}
-		if(input1.contains("210")) {
+		if(input1.contains("10")) {
 			Kim();
 		}
 		}
