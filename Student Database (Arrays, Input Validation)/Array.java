@@ -44,36 +44,39 @@ public class Array {
 			System.out.println(i + ". " + names[i]);
 		}
 		
-		String input1 = nameIn.nextLine().toLowerCase();
+		int input1 = nameIn.nextInt();
 
-		if(input1.contains("1")) {
+		if(input1 == 1) {
 			Aubrey();
 		}
-		if(input1.contains("2")) {
+		if(input1 == 2) {
 			Luke();
 		}
-		if(input1.contains("3")) {
+		if(input1 == 3) {
 			Max();
 		}
-		if(input1.contains("4")) {
+		if(input1 == 4) {
 			Timmy();
 		}
-		if(input1.contains("5")) {
+		if(input1 == 5) {
 			Ced();
 		}
-		if(input1.contains("6")) {
+		if(input1 == 6) {
 			Maxi();
 		}
-		if(input1.contains("7")) {
+		if(input1 == 7) {
 			Jimmy();
 		}
-		if(input1.contains("8")) {
+		if(input1 == 8) {
 			Amanda();		}
-		if(input1.contains("9")) {
+		if(input1 == 9) {
 			Tom();
 		}
-		if(input1.contains("10")) {
+		if(input1 == 10) {
 			Kim();
+		}
+		else {
+			System.out.println("That student does not exist.  Please try again. (enter a number 1-10): ");
 		}
 		}
 
