@@ -18,6 +18,8 @@ public class GeunthersMarket {
 	
 	public static void main(String[] args) {
 
+		System.out.println("Welcome to Geunthers Market!");
+		System.out.println(" ");
 		userInput();
 	do {
 		System.out.println("Would you like to order anything else? (y/n)");
@@ -32,7 +34,6 @@ public class GeunthersMarket {
 		} 
 	} while (true);
 	}
-
 	public static void averageCost() {
 		for(int count = 0; count < pricesInputs.size(); count++) {
 			sum += pricesInputs.get(count);
