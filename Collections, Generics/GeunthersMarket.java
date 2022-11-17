@@ -11,8 +11,8 @@ public class GeunthersMarket {
 	static String userIn;
 	static String[] items = new String[]{"pomegranate", "watermelon", "cauliflower", 
 			"dragonfruit", "elderberry", "raspberry", "grapefruit", "honeydew"};
-	static double[] prices = new double[] {0.99, 0.59, 1.59, 2.19, 1.79,
-			2.09, 1.99, 3.49};
+	static double[] prices = new double[] {2.99, 5.59, 1.59, 2.19, 1.79,
+			4.09, 1.99, 3.49};
 	static int cart = -1;
 	static double sum = 0;
 	
@@ -37,6 +37,7 @@ public class GeunthersMarket {
 		for(int count = 0; count < pricesInputs.size(); count++) {
 			sum += pricesInputs.get(count);
 		}
+		System.out.println(" ");
 		System.out.println("Average price per item in order was $" + sum/pricesInputs.size());
 	}
 	public static void userInput( ) {
@@ -77,7 +78,12 @@ public class GeunthersMarket {
 		System.out.println(" ");
 		System.out.println("Heres what you got: ");
 		System.out.println(" ");
-		System.out.format(itemsInputs + "\n");
-		System.out.println(pricesInputs + "\n");
+		System.out.println("Cart	");
+		System.out.println("===============================");
+		System.out.println(" ");
+		
+		for(int x = 0; x < itemsInputs.size(); x++) {
+			System.out.format("%-25s $%s%n", itemsInputs.get(x), pricesInputs.get(x));
+		}
 	}
 	}
