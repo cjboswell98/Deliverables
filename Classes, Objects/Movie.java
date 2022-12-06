@@ -11,4 +11,9 @@ public class Movie {
 		public Movie() {
 			//leaves all fields with the default value (i.e. null, 0, or false)
 		}
+		@Override
+		public String toString() {
+			return title;
+		}
+		
 }
