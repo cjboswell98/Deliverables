@@ -60,22 +60,16 @@ public class MovieApp {
 		System.out.println(" ");
 	
 		if(choice.equals("scifi")) {
-			System.out.println(movie1.title);
-			System.out.println(movie2.title);
-			System.out.println(movie3.title);
+			System.out.println(scifiMovies);
 		}
 		else if(choice.equals("horror")) {
-			System.out.println(movie4.title);
-			System.out.println(movie5.title);
+			System.out.println(horrorMovies);
 		}
 		else if(choice.equals("animated")) {
-			System.out.println(movie6.title);
-			System.out.println(movie7.title);
-			System.out.println(movie8.title);
+			System.out.println(animatedMovies);
 		} 
 		else if(choice.equals("drama")) {
-			System.out.println(movie9.title);
-			System.out.println(movie10.title);
+			System.out.println(dramaMovies);
 		} else {
 			System.out.println("Please try again");
 		}
