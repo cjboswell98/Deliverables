@@ -7,6 +7,6 @@ public class SimonGreeter extends Greeter {
 		
 		@Override
 		public String greet(String name) {
-			return("Simon says, " + greeting + ", " + name + "!");
+			return("Simon says, " + '"' + greeting + ", " + name + "!" + '"');
 		}
 }
