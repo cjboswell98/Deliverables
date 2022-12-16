@@ -1,5 +1,8 @@
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 import org.junit.jupiter.api.Test;
 
 class MovieAppTest {
@@ -43,8 +46,12 @@ class MovieAppTest {
 	@Test
 	void testVHSrewind() {
 		VHS currentTime = new VHS("Private Ryan", 115);
-		double actual = currentTime.
+		currentTime.setScenes(new ArrayList<>(Arrays.asList("Once upon a time", "Vador", "Peace out", "Obi-Wan", "Lets do it")));
+		currentTime.play();
+		currentTime.rewind();
+		double actual = currentTime.getCurrentTime();
 		double expected = 0.0;
 		assertEquals(expected, actual);
 	}
 }
+
